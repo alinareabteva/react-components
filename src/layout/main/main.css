@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.main .content {
+  padding: 2em;
+  margin-top: -15px;
+}
+
