@@ -1,4 +1,6 @@
 .footer {
+  width: 71.5vw;
+  margin: 5px 0 auto;
   min-height: 80px;
   background-color: black;
   display: flex;

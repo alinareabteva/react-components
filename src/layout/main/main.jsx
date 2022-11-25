@@ -5,11 +5,12 @@ import {
   Outlet
 } from "react-router-dom";
 
+import "./main.css";
+
 import Footer from '../footer/footer';
 import Home from '../home/home';
 import Navigation from '../navigation/navigation';
-import "./main.css";
-
+import ButtonSandbox from '../../components/button/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
         path: '/',
         exact: true,
         element: <Home />,
+      },
+      {
+        path: '/button/',
+        exact: true,
+        element: <ButtonSandbox />,
       },
      
     ]

@@ -35,9 +35,37 @@
   box-sizing: border-box;
   font-weight: 600;
 }
-
+.nav li a {
+  position:relative;
+  z-index: 1;
+}
+.nav li a:hover {
+  color: #91640F;
+}
+.nav li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgba(192,192,192,.3);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.nav li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
 .nav a:hover,
 .nav a.active {
-  background-color: rgba(192,192,192,.3);
+  background-color: #d4c27d;
   border-color: #EBEBEB;
 }
