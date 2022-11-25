@@ -11,6 +11,7 @@ import Footer from '../footer/footer';
 import Home from '../home/home';
 import Navigation from '../navigation/navigation';
 import ButtonSandbox from '../../components/button/Sandbox';
+import ButtonGroup from '../../components/button-group/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
         path: '/button/',
         exact: true,
         element: <ButtonSandbox />,
+      },
+      {
+        path: '/button-group/',
+        exact: true,
+        element: <ButtonGroup />,
       },
      
     ]
