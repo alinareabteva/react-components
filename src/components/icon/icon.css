@@ -1,0 +1,13 @@
+
+
+.action {
+  cursor: pointer;
+}
+
+.action.disabled {
+  cursor: not-allowed;
+}
+
+.action.disabled svg path {
+  opacity: 0.5;
+}
