@@ -1,5 +1,7 @@
 .footer {
-  width: 71.5vw;
+  
+  position: sticky;
+  bottom: 0;
   margin: 5px 0 auto;
   min-height: 100px;
   background-color: black;

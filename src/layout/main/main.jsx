@@ -12,6 +12,7 @@ import Home from '../home/home';
 import Navigation from '../navigation/navigation';
 import ButtonSandbox from '../../components/button/Sandbox';
 import ButtonGroup from '../../components/button-group/Sandbox';
+import Icon from '../../components/icon/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         path: '/button-group/',
         exact: true,
         element: <ButtonGroup />,
+      },
+      {
+        path: '/icon/',
+        exact: true,
+        element: <Icon />,
       },
      
     ]

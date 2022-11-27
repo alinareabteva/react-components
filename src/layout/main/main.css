@@ -4,7 +4,12 @@
   flex-direction: row;
 }
 
+.main .content-wrapper {
+  width: 100%;
+}
+
 .main .content {
+  min-height: calc(100vh - 105px - 2em);
   padding: 2em;
   margin-top: -15px;
 }
