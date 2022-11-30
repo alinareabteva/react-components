@@ -3,22 +3,33 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {PencilIcon as EditIcon} from "./icons/PencilIcon";
 import {AtomIcon} from "./icons/AtomIcon";
+import {DeleteIcon} from "./icons/DeleteIcon";
+import {HomeIcon} from "./icons/HomeIcon";
+import {SpinnerIcon} from "./icons/SpinnerIcon";
 
 import './icon.css';
+
 export const IconNames = Object.freeze({
   Edit: 'edit',
-  Atom: 'atom'
+  Atom: 'atom',
+  Delete: 'delete',
+  Home: 'home',
+  Spinner: 'spinner'
 })
 
 export const IconSizes = {
   small: '1em',
   medium: "3em",
-  large: '5em'
+  large: '5em',
+  mySize: '8em'
 }
 
 const IconByName = {
   [IconNames.Edit]: EditIcon,
-  [IconNames.Atom]: AtomIcon
+  [IconNames.Atom]: AtomIcon,
+  [IconNames.Delete]: DeleteIcon,
+  [IconNames.Home]: HomeIcon,
+  [IconNames.Spinner]: SpinnerIcon
 }
 
 const Icon = ({

@@ -1,9 +1,17 @@
-/* eslint-disable */
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Button from './Button';
 
-const Sandbox = () => (
-  <>
+const Sandbox = () => {
+    const [loading, setLoading] = useState(false)
+
+    useEffect(()=>{
+      setTimeout(()=>{
+        setLoading(false)
+      }, 5000)
+    }, [loading])
+
+  return(
+    <>
 
     <h2 className="text"><span>1. Text and onClick function:</span></h2>
     <Button onClick={() => { console.log('!!!!'); }}>Button text</Button>
@@ -22,8 +30,12 @@ const Sandbox = () => (
     <Button href="test">Link</Button>
     <Button href="test" disabled>Link</Button>
 
+    <h2 className="text"><span>6. Button with spinner</span></h2>
+        
+    <Button className="sweet-loading"onClick={e => setLoading(true)} loading={loading}>{loading ? 'Loading data...' : 'Fetch Data From Server'}</Button>
+    
+
   </>
-);
+)};
 
 export default Sandbox;
-/* eslint-enable */

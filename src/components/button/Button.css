@@ -10,6 +10,11 @@
   display: inline-block;
   text-decoration: none;
 }
+button.btn.sweet-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn:hover {
   background-color: #70B4E6;

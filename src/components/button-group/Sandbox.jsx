@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import ButtonGroup from './ButtonGroup';
 import Button from '../button/Button';
@@ -48,4 +47,3 @@ class Sandbox extends Component {
 }
 
 export default Sandbox;
-/* eslint-enable */

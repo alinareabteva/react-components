@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import './ButtonGroup.css';
 
 const ButtonGroup = ({
-  children, className, vertical, ...attrs
+  children = null, className = '', vertical = false, ...attrs
 }) => {
   const classes = classNames(
     'btn-group',
@@ -26,10 +26,5 @@ ButtonGroup.propTypes = {
   vertical: PropTypes.bool,
 };
 
-ButtonGroup.defaultProps = {
-  children: null,
-  className: '',
-  vertical: false,
-};
 
 export default ButtonGroup;

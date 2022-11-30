@@ -1,5 +1,4 @@
 
-
 .action {
   cursor: pointer;
 }
@@ -10,4 +9,7 @@
 
 .action.disabled svg path {
   opacity: 0.5;
+}
+.text{
+  text-decoration: underline;
 }

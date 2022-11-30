@@ -1,18 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import {Spinner} from "../spinner/Spinner";
 
 import './Button.css';
 
 const Button = ({
-  children, onClick, className, disabled, active, ...attrs
+  children = 'Default button',
+  onClick = () => {},
+  className = '',
+  disabled = false, 
+  active = false, 
+  fullWidth = false, 
+  loading = false, 
+  ...attrs
 }) => {
+  const isDisabled = loading || disabled;
+
   const onClickAction = e => {
-    if (disabled) {
+    if (isDisabled) {
       e.preventDefault();
-    } else {
-      return onClick(e);
+      return;
     }
+    console.log('click')
+    onClick(e);
   };
 
   const classes = classNames(
@@ -26,10 +37,14 @@ const Button = ({
   return (
     <Tag
       className={classes}
-      disabled={disabled}
+      disabled={isDisabled}
       onClick={onClickAction}
+      style={{
+        ...(fullWidth && {width: '100%'})
+      }}
       {...attrs}
     >
+      {loading && <Spinner /> }
       {children}
     </Tag>
   );
@@ -41,14 +56,6 @@ Button.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   active: PropTypes.bool,
-};
-
-Button.defaultProps = {
-  children: 'Default button',
-  onClick: () => {},
-  className: '',
-  disabled: false,
-  active: false,
 };
 
 export default Button;
