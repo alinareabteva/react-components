@@ -8,7 +8,7 @@ import {
 import "./main.css";
 
 import Footer from '../footer/footer';
-import Home from '../home/home';
+import Home from '../../components/home/home';
 import Navigation from '../navigation/navigation';
 import ButtonSandbox from '../../components/button/Sandbox';
 import ButtonGroup from '../../components/button-group/Sandbox';
