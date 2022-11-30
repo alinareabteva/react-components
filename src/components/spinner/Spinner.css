@@ -1,0 +1,13 @@
+
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
+
+div.spinner-icon {
+	margin-right: 10px;
+}
+
+div.spinner-icon svg {
+	 animation: rotate 1.5s linear infinite; 
+}
+
