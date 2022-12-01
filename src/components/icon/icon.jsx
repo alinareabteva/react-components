@@ -6,6 +6,8 @@ import {AtomIcon} from "./icons/AtomIcon";
 import {DeleteIcon} from "./icons/DeleteIcon";
 import {HomeIcon} from "./icons/HomeIcon";
 import {SpinnerIcon} from "./icons/SpinnerIcon";
+import {AvatarIcon} from "./icons/AvatarIcon";
+import {CloseIcon} from "./icons/CloseIcon";
 
 import './icon.css';
 
@@ -14,7 +16,9 @@ export const IconNames = Object.freeze({
   Atom: 'atom',
   Delete: 'delete',
   Home: 'home',
-  Spinner: 'spinner'
+  Spinner: 'spinner',
+  Avatar: 'avatar',
+  Close: 'close',
 })
 
 export const IconSizes = {
@@ -29,15 +33,22 @@ const IconByName = {
   [IconNames.Atom]: AtomIcon,
   [IconNames.Delete]: DeleteIcon,
   [IconNames.Home]: HomeIcon,
-  [IconNames.Spinner]: SpinnerIcon
+  [IconNames.Spinner]: SpinnerIcon,
+  [IconNames.Avatar]: AvatarIcon,
+  [IconNames.Close]: CloseIcon,
 }
 
 const Icon = ({
-  name, className, size, onClick, disabled = false, ...attrs
+  name = '', 
+  className = '', 
+  size = null, 
+  onClick = null, 
+  disabled = false,
+  ...attrs
 }) => {
   const classes = classNames({
     'icon-wrapper': true,
-    className: !className,
+    [className]: !className,
     disabled,
     action: !!onClick
   });
@@ -47,9 +58,9 @@ const Icon = ({
   }
 
   return (
-    <div style={{width: size}}className={classes} onClick={disabled ? undefined : onClick}>
-      <IconToRender />
-    </div>
+    <span style={{width: size}}className={classes} onClick={disabled ? undefined : onClick}>
+      <IconToRender {...attrs}/>
+    </span>
   );
 };
 
@@ -59,14 +70,6 @@ Icon.propTypes = {
   size: PropTypes.oneOf(Object.values(IconSizes)),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
-};
-
-Icon.defaultProps = {
-  name: '',
-  className: '',
-  size: null,
-  onClick: null,
-  disabled: false,
 };
 
 export default Icon;
