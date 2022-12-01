@@ -2,3 +2,6 @@
   border-radius: 50%;
   overflow: hidden;
 }
+.text{
+  text-decoration: underline;
+}

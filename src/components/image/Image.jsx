@@ -5,7 +5,13 @@ import classNames from 'classnames';
 import './Image.css';
 
 const Image = ({
-  src = '', alt = 'image', className = '', width = 100, height = 100, circle = false, ...attrs
+  src = '', 
+  alt = 'image', 
+  className = '', 
+  width = 100, 
+  height = 100, 
+  circle = false, 
+  ...attrs
 }) => {
   const classes = classNames(
     className,
