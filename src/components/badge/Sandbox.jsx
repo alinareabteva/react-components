@@ -6,7 +6,7 @@ import Icon, {IconNames, IconSizes} from '../icon/icon';
 const Sandbox = () => (
   <>
 
-    <h2><span>1. Badges with text:</span></h2>
+    <h2 className="text"><span>1. Badges with text:</span></h2>
     <Button style={{ marginRight: '20px' }}>
       <Icon  name={IconNames.Letter} size={IconSizes.small}/>
       <Badge value="new" />
@@ -16,7 +16,7 @@ const Sandbox = () => (
       <Badge circle value="new" />
     </Button>
 
-    <h2><span>2. Badges with number:</span></h2>
+    <h2 className="text"><span>2. Badges with number:</span></h2>
     <Button style={{ marginRight: '20px' }}>
       <Icon name={IconNames.Message} size={IconSizes.small} />
       <Badge value={2} />
@@ -26,7 +26,7 @@ const Sandbox = () => (
       <Badge circle value={12} />
     </Button>
 
-    <h2><span>3. Inline Badges:</span></h2>
+    <h2 className="text"><span>3. Inline Badges:</span></h2>
     <Button style={{ marginRight: '20px' }}>
     <div className="position">
       <Icon name={IconNames.Phone} size={IconSizes.small}  />
@@ -40,7 +40,7 @@ const Sandbox = () => (
       </div>
     </Button>
 
-    <h2><span>4. Outer Badges:</span></h2>
+    <h2 className="text"><span>4. Outer Badges:</span></h2>
     <Button style={{ marginRight: '20px' }}>
       <Icon name={IconNames.Notification} size={IconSizes.small} />
       <Badge outer value={11} />
@@ -50,7 +50,7 @@ const Sandbox = () => (
       <Badge outer warning value={3} />
     </Button>
 
-    <h2><span>5. Warning, Alert, Success, Info Badges:</span></h2>
+    <h2 className="text"><span>5. Warning, Alert, Success, Info Badges:</span></h2>
     <Button style={{ marginRight: '20px', marginBottom: '20px' }}>
       <Icon name={IconNames.Warning} size={IconSizes.small} />
       <Badge circle warning value={3} />

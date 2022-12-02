@@ -30,6 +30,9 @@
 .text {
   width : auto;
 }
+h2 .text{
+  text-decoration: underline;
+}
 
 .circle {
   border-radius: 50%;
