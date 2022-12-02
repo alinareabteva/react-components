@@ -15,6 +15,7 @@ import ButtonGroup from '../../components/button-group/Sandbox';
 import Icon from '../../components/icon/Sandbox';
 import Image from '../../components/image/Sandbox';
 import Chip from '../../components/chip/Sandbox';
+import Badge from '../../components/badge/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -62,6 +63,11 @@ const router = createBrowserRouter([
         path: '/chip/',
         exact: true,
         element: <Chip />,
+      },
+      {
+        path: '/badge/',
+        exact: true,
+        element: <Badge />,
       },
      
     ]

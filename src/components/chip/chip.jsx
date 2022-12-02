@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Icon from '../icon/icon';
 import Image from '../image/Image';
-import {IconSizes, IconNames} from "../icon/icon"
+import {IconSizes, IconNames} from "../icon/icon";
 
 import './chip.css';
 

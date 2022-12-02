@@ -8,6 +8,16 @@ import {HomeIcon} from "./icons/HomeIcon";
 import {SpinnerIcon} from "./icons/SpinnerIcon";
 import {AvatarIcon} from "./icons/AvatarIcon";
 import {CloseIcon} from "./icons/CloseIcon";
+import {LetterIcon} from "./icons/LetterIcon";
+import {MessageIcon} from "./icons/MessageIcon";
+import {PhoneIcon} from "./icons/PhoneIcon";
+import {NotificationIcon} from "./icons/NotificationIcon";
+import {WifiIcon} from "./icons/WifiIcon";
+import {WarningIcon} from "./icons/WarningIcon";
+import {AlertIcon} from "./icons/AlertIcon";
+import {SuccessIcon} from "./icons/SuccessIcon";
+import {InfoIcon} from "./icons/InfoIcon";
+
 
 import './icon.css';
 
@@ -19,6 +29,15 @@ export const IconNames = Object.freeze({
   Spinner: 'spinner',
   Avatar: 'avatar',
   Close: 'close',
+  Letter: 'letter',
+  Message: 'message',
+  Phone: 'phone',
+  Notification: 'notification',
+  Wifi: 'wifi',
+  Warning: 'warning',
+  Alert: 'alert',
+  Success: 'success',
+  Info: 'info'
 })
 
 export const IconSizes = {
@@ -36,6 +55,15 @@ const IconByName = {
   [IconNames.Spinner]: SpinnerIcon,
   [IconNames.Avatar]: AvatarIcon,
   [IconNames.Close]: CloseIcon,
+  [IconNames.Letter]: LetterIcon,
+  [IconNames.Message]: MessageIcon,
+  [IconNames.Phone]: PhoneIcon,
+  [IconNames.Notification]: NotificationIcon,
+  [IconNames.Wifi]: WifiIcon,
+  [IconNames.Warning]: WarningIcon,
+  [IconNames.Alert]: AlertIcon,
+  [IconNames.Success]: SuccessIcon,
+  [IconNames.Info]: InfoIcon,
 }
 
 const Icon = ({

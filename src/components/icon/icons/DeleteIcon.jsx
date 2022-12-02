@@ -7,9 +7,7 @@ export const DeleteIcon = ({color = "#000"}) => {
 			height="100%" 
 			viewBox="0 0 32 32" 
 			enableBackground="new 0 0 32 32" 
-			id="Stock_cut" 
-			xmlns="http://www.w3.org/2000/svg">
-			<desc/><g>
+			>
 			<polygon 
 			fill="red" 
 			points="25,11 7,11 9,31    23,31  " 
@@ -41,7 +39,7 @@ export const DeleteIcon = ({color = "#000"}) => {
 			stroke="#000000" 
 			strokeLinejoin="round" 
 			strokeMiterlimit="10" 
-			strokeWidth="2"/></g>
+			strokeWidth="2"/>
 		</svg>
 	)
 }
