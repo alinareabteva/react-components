@@ -17,6 +17,7 @@ import Image from '../../components/image/Sandbox';
 import Chip from '../../components/chip/Sandbox';
 import Badge from '../../components/badge/Sandbox';
 import ListGroup from '../../components/list-group/Sandbox';
+import Input from '../../components/input/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -74,6 +75,11 @@ const router = createBrowserRouter([
         path: '/list-group/',
         exact: true,
         element: <ListGroup />,
+      },
+      {
+        path: '/input/',
+        exact: true,
+        element: <Input />,
       },
      
     ]
