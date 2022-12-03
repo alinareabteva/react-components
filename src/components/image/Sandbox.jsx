@@ -20,7 +20,7 @@ const Sandbox = () => (
 
     <h2 className="text"><span>4. Circle image with 150x150 size:</span></h2>
     <Image
-      src="https://pp.userapi.com/a9QrnDt7kgIb8VkcrCWpCoqd7JRwq5wX_YDr7Q/pOMxeuWzvxg.jpg?ava=1"
+      src='assets/harry.jpg'
       width={150}
       height={150}
       circle

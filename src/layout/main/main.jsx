@@ -18,6 +18,7 @@ import Chip from '../../components/chip/Sandbox';
 import Badge from '../../components/badge/Sandbox';
 import ListGroup from '../../components/list-group/Sandbox';
 import Input from '../../components/input/Sandbox';
+import TabBar from '../../components/tabbar/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -80,6 +81,11 @@ const router = createBrowserRouter([
         path: '/input/',
         exact: true,
         element: <Input />,
+      },
+      {
+        path: '/tabbar/',
+        exact: true,
+        element: <TabBar />,
       },
      
     ]
