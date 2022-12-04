@@ -42,6 +42,7 @@ export const IconNames = Object.freeze({
 
 export const IconSizes = {
   small: '1em',
+  badgeIcon: '2em',
   medium: "3em",
   large: '5em',
   mySize: '8em'
