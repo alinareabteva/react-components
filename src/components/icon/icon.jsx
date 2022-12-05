@@ -17,6 +17,8 @@ import {WarningIcon} from "./icons/WarningIcon";
 import {AlertIcon} from "./icons/AlertIcon";
 import {SuccessIcon} from "./icons/SuccessIcon";
 import {InfoIcon} from "./icons/InfoIcon";
+import {DatabaseIcon} from "./icons/DatabaseIcon";
+
 
 
 import './icon.css';
@@ -37,7 +39,8 @@ export const IconNames = Object.freeze({
   Warning: 'warning',
   Alert: 'alert',
   Success: 'success',
-  Info: 'info'
+  Info: 'info',
+  DataBase: 'database'
 })
 
 export const IconSizes = {
@@ -45,7 +48,8 @@ export const IconSizes = {
   badgeIcon: '2em',
   medium: "3em",
   large: '5em',
-  mySize: '8em'
+  huge: '8em',
+  presentation: '50%'
 }
 
 const IconByName = {
@@ -65,6 +69,7 @@ const IconByName = {
   [IconNames.Alert]: AlertIcon,
   [IconNames.Success]: SuccessIcon,
   [IconNames.Info]: InfoIcon,
+  [IconNames.DataBase]: DatabaseIcon
 }
 
 const Icon = ({
@@ -96,7 +101,7 @@ const Icon = ({
 Icon.propTypes = {
   name: PropTypes.oneOf(Object.values(IconNames)),
   className: PropTypes.string,
-  size: PropTypes.oneOf(Object.values(IconSizes)),
+  size: PropTypes.string,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
 };

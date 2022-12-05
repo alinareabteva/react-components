@@ -19,6 +19,7 @@ import Badge from '../../components/badge/Sandbox';
 import ListGroup from '../../components/list-group/Sandbox';
 import Input from '../../components/input/Sandbox';
 import TabBar from '../../components/tabbar/Sandbox';
+import IconCollection from '../../components/icon-collection/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -86,6 +87,11 @@ const router = createBrowserRouter([
         path: '/tabbar/',
         exact: true,
         element: <TabBar />,
+      },
+      {
+        path: '/icon-collection/',
+        exact: true,
+        element: <IconCollection />,
       },
      
     ]

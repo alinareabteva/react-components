@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const LetterIcon = ({color = "#fff"}) => {
+export const LetterIcon = ({color = "#000"}) => {
 	return (
 		<svg 
 		  width="100%" 

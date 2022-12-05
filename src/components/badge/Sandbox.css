@@ -7,3 +7,7 @@ button.badge-wrapper.btn {
 section {
     margin-top: 20px;
 }
+section select{
+    height: 35px;
+}
+

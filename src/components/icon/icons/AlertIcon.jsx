@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const AlertIcon = ({color = "none"}) => {
+export const AlertIcon = ({color = "#000", fill = "none"}) => {
 	return (
 		<svg 
 		  width="100%" 
 		  height="100%"
 		  viewBox="0 0 24 24" 
-		  fill={color} 
-		  stroke="currentColor" 
+		  fill={fill} 
+		  stroke={color}
 		  strokeWidth="2" 
 		  strokeLinecap="round" 
 		  strokeLinejoin="round" 

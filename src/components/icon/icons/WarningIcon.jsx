@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const WarningIcon = ({color = "#fff"}) => {
+export const WarningIcon = ({color = "#000"}) => {
 	return (
 		<svg 
 		  width="100%" 

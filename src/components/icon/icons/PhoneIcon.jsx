@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PhoneIcon = ({color = "#fff"}) => {
+export const PhoneIcon = ({color = "#000"}) => {
 	return (
 	<svg 
 	  width="100%" 

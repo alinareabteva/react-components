@@ -1,7 +1,5 @@
 import React from 'react';
 import Icon, {IconNames, IconSizes} from './icon';
-import ButtonGroup from '../button-group/ButtonGroup';
-import Button from '../button/Button';
 
 const Sandbox = () => (
   <>
@@ -14,10 +12,10 @@ const Sandbox = () => (
 
 
      <h2 className="text"><span>3. Icon with size 8em</span></h2>
-    <Icon title="badge" onClick={() => { console.log('DELETE'); }} size={IconSizes.mySize} name={IconNames.Delete} />
+    <Icon title="badge" onClick={() => { console.log('DELETE'); }} size={IconSizes.huge} name={IconNames.Delete} fill="red" />
 
     <h2 className="text"><span>4. Home icon functionality:</span></h2>
-    <Icon onClick={() => { console.log('home'); }} size={IconSizes.large} name={IconNames.Home}/>
+    <Icon onClick={() => { console.log('home'); }} size={IconSizes.large} name={IconNames.Home} fill="blue"/>
 
   </>
 );

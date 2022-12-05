@@ -1,12 +1,11 @@
 import React from 'react'
 
-export const SuccessIcon = ({color = "#fff"}) => {
+export const SuccessIcon = ({color = "#000"}) => {
 	return (
 		<svg 
 		  width="100%" 
 		  height="100%" 
 		  viewBox="0 0 512 512" 
-		  id="Layer_1" 
 		  >
 		  <path 
 		  fill={color}
