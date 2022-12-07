@@ -9,3 +9,10 @@ section select{
 .control{
     text-align: center;
 }
+.custom-range{
+    margin-left: 10px;
+    width: 300px;
+}
+.percent-text{
+    margin-left: 10px;
+}
