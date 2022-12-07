@@ -13,7 +13,6 @@ const Modal = ({
   onCancel = () => {}, 
   onSubmit = () => {}, 
   children = null,
-  iconName = '',
 }) => {
 
   return (
