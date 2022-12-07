@@ -52,6 +52,15 @@ export const IconSizes = {
   presentation: '50%'
 }
 
+export const IconProgressBar = {
+  small: '5%',
+  badgeIcon: '10%',
+  medium: "20%",
+  large: '35%',
+  huge: '50%',
+  presentation: '100%'
+}
+
 const IconByName = {
   [IconNames.Edit]: EditIcon,
   [IconNames.Atom]: AtomIcon,
