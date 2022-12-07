@@ -55,9 +55,7 @@ return (
        onChange={(event) => setRangeval(event.target.value)} />
       <output className="percent-text">{rangeval + " %"}</output>
     
-    </section>
-
-   
+    </section>  
 
 
     <TabBar vertical>

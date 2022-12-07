@@ -12,12 +12,6 @@ class Tooltip extends Component {
     style: PropTypes.objectOf(PropTypes.string),
   }
 
-  static defaultProps = {
-    content: 'Tooltip content',
-    style: {},
-    position: 'top'
-  }
-
   state = {
     visible: false,
   }
@@ -36,7 +30,11 @@ class Tooltip extends Component {
 
   render() {
     const { visible } = this.state;
-    const { children, content, style, position } = this.props;
+    const { 
+        children, 
+        content = 'Tooltip content', 
+        style = {}, 
+        position = 'top' } = this.props;
 
     const classes = classNames(
       'tooltip',

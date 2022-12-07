@@ -20,6 +20,8 @@ import ListGroup from '../../components/list-group/Sandbox';
 import Input from '../../components/input/Sandbox';
 import TabBar from '../../components/tabbar/Sandbox';
 import IconCollection from '../../components/icon-collection/Sandbox';
+import Tooltip from '../../components/tooltip/Sandbox';
+import Modal from '../../components/modal/Sandbox';
 
 const Main = () => (
   <div className="main">
@@ -93,6 +95,17 @@ const router = createBrowserRouter([
         exact: true,
         element: <IconCollection />,
       },
+      {
+        path: '/tooltip/',
+        exact: true,
+        element: <Tooltip />,
+      },
+      {
+        path: '/modal/',
+        exact: true,
+        element: <Modal />,
+      },
+     
      
     ]
   },

@@ -9,8 +9,12 @@
     font-style: italic;
   }
 
-  p{
+  .all-text{
    margin-right: 50%;
+  }
+  
+  .text{
+    text-decoration: underline;
   }
   
   .tooltip {

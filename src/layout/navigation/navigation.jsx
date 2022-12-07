@@ -20,6 +20,8 @@ const Navigation = () => (
         <li><NavLink to="/input">Input</NavLink></li>
         <li><NavLink to="/tabbar">TabBar</NavLink></li>
         <li><NavLink to="/icon-collection">Icon Collection</NavLink></li>
+        <li><NavLink to="/tooltip">Tooltip</NavLink></li>
+        <li><NavLink to="/modal">Modal</NavLink></li>
       </ul>
     </nav>
   </div>
