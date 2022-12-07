@@ -11,6 +11,7 @@ const Button = ({
   className = '',
   disabled = false, 
   active = false, 
+  invert = false,
   fullWidth = false, 
   loading = false, 
   ...attrs
@@ -30,6 +31,7 @@ const Button = ({
     'btn',
     className,
     { active },
+    { invert },
   );
 
   const Tag = attrs.href ? 'a' : 'button';
