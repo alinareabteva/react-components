@@ -1,6 +1,9 @@
 section {
     margin-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 section select{
     height: 35px;
@@ -15,4 +18,5 @@ section select{
 }
 .percent-text{
     margin-left: 10px;
+    width: 50px;
 }
