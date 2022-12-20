@@ -32,7 +32,7 @@ const Sandbox = () => {
 
   return (
     <>
-    <section className="controls">
+    <section className="section-wrapper">
       <Button data-directionindex="-1" onClick={changeSize} disabled={state.iconSize === lowestIconSize}>-</Button>
       <Button data-directionindex="1" onClick={changeSize} disabled={state.iconSize === biggestIconSize}>+</Button>
       <select value={state.iconSize}onChange={onSelectIconSize} placeholder="Select IconSize">
@@ -87,7 +87,7 @@ const Sandbox = () => {
     </Button>
 
     <h2 className="text"><span>5. Warning, Alert, Success, Info Badges:</span></h2>
-    <section>
+    <section className="section-wrapper">
     <Button className="badge-wrapper">
       <Icon name={IconNames.Warning} size={state.iconSize} color="white"/>
       <Badge circle warning value={3} />
@@ -105,7 +105,7 @@ const Sandbox = () => {
       <Badge circle info value={8} />
     </Button>
     </section>
-    <section>
+    <section className="section-wrapper">
     <Button className="badge-wrapper">
       <Icon name={IconNames.Warning} size={state.iconSize} color="white"/>
       <Badge warning value={3} />
