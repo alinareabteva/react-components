@@ -1,0 +1,13 @@
+.tab-bar-item {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tab-bar-item.active {
+  height: auto;
+
+}

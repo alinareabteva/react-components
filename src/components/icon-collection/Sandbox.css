@@ -1,0 +1,22 @@
+section {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section select{
+    height: 35px;
+    margin-left: 10px;
+}
+.control{
+    text-align: center;
+}
+.custom-range{
+    margin-left: 10px;
+    width: 300px;
+}
+.percent-text{
+    margin-left: 10px;
+    width: 50px;
+}

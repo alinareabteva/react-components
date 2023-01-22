@@ -1,0 +1,14 @@
+.footer {
+  z-index: 99999;
+  position: sticky;
+  bottom: 0;
+  margin: 5px 0 auto;
+  min-height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  color: #fff;
+  box-shadow: 5px -1px 10px #777;
+}
