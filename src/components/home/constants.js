@@ -1,26 +1,31 @@
+import FbIcon from './assets/fbIcon.png';
+import VkIcon from './assets/vkIcon.png'
+import GitHubIcon from './assets/gitIcon.png'
+import LinkedInIcon from './assets/linkedIcon.png'
+
 export const SOCIAL_CONFIG = [
   {
     id: 'facebook',
     socialLink: 'https://www.facebook.com/riabtev/',
-    imageLink: 'assets/fbIcon.png',
+    imageLink: FbIcon,
     imgHeight: '35',
   },
-    {
+  {
     id: 'vk',
     socialLink: 'https://vk.com/allineryss',
-    imageLink: 'assets/vkIcon.png',
+    imageLink: VkIcon,
     imgHeight: '37',
   },
   {
     id: 'github',
     socialLink: 'https://github.com/alinareabteva',
-    imageLink: 'assets/gitIcon.png',
+    imageLink: GitHubIcon,
     imgHeight: '37',
   },
   {
     id: 'linkedin',
     socialLink: 'https://linkedin.com/in/alina-reabtev',
-    imageLink: 'assets/linkedIcon.png',
+    imageLink: LinkedInIcon,
     imgHeight: '35',
   },
 ];

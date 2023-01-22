@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from './Image';
+import HpImage from './assets/harry.jpg'
 
 const Sandbox = () => (
   <>
@@ -20,7 +21,7 @@ const Sandbox = () => (
 
     <h2 className="text"><span>4. Circle image with 150x150 size:</span></h2>
     <Image
-      src='assets/harry.jpg'
+      src={HpImage}
       width={150}
       height={150}
       circle

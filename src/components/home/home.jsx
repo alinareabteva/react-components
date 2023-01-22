@@ -1,9 +1,14 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { SOCIAL_CONFIG, DEPENDENCIES } from './constants';
 import './home.css';
+import VkIcon from "./assets/vkIcon.png";
 
 
-const Home = () => (
+const Home = () => {
+  const location = useLocation();
+  debugger;
+return (
   <>
     <h1 className="title"><span>Collection of React Components</span></h1>
     <p>In this application, I created a component library for <strong>ReactJS</strong> projects.</p>
@@ -33,6 +38,6 @@ const Home = () => (
 
      
   </>
-);
+)};
 
 export default Home;

@@ -1,6 +1,7 @@
 import React from 'react';
 import TabBar from './TabBar';
 import TabBarItem from './TabBarItem';
+import HarryIcon from './assets/harry.jpg'
 
 import Image from '../image/Image';
 import ButtonGroup from '../button-group/ButtonGroup';
@@ -20,7 +21,7 @@ The movie is set in modern England and in a fictional place called Hogwarts. The
       </TabBarItem>
       <TabBarItem label="Image">
         <Image
-          src='assets/harry.jpg'
+          src={HarryIcon}
           width={150}
           height={150}
         />
@@ -46,7 +47,7 @@ The movie is set in modern England and in a fictional place called Hogwarts. The
       </TabBarItem>
       <TabBarItem label="Image">
         <Image
-          src='assets/harry.jpg'
+          src={HarryIcon}
           width={150}
           height={150}
         />

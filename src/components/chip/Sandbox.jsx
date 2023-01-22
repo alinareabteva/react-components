@@ -1,7 +1,10 @@
 import React from 'react';
 import Chip from './chip';
 import Example from './example';
-import {IconNames} from "../icon/icon"
+import {IconNames} from "../icon/icon";
+import ReactIcon from './assets/react.png';
+import VueIcon from './assets/vue.png';
+import AngularIcon from './assets/angular.png';
 
 const Sandbox = () => (
   <>
@@ -22,20 +25,20 @@ const Sandbox = () => (
     <Chip text="Full Chip" withIcon iconName={IconNames.Avatar} withClose />
 
     <h2 className="text"><span>5. Chip with image:</span></h2>
-    <Chip text="React" withImage imageSrc='assets/react.png' imgAlt="react" />
+    <Chip text="React" withImage imageSrc={ReactIcon} imgAlt="react" />
 
     <h2 className="text"><span>6. Chip with actions on Body and cross-icon:</span></h2>
     <Chip
       text="React"
       withImage
-      imageSrc='assets/react.png'
+      imageSrc={ReactIcon}
       imgAlt="react"
       onChipClick={() => { console.log('clicked on a chip body'); }}
     />
     <Chip
       text="Angular"
       withImage
-      imageSrc='assets/angular.png'
+      imageSrc={AngularIcon}
       imgAlt="angular"
       onCloseClick={() => { console.log('clicked on a close icon'); }}
       withClose
@@ -43,7 +46,7 @@ const Sandbox = () => (
     <Chip
       text="Vue"
       withImage
-      imageSrc='assets/vue.png'
+      imageSrc={VueIcon}
       imgAlt="vue"
       onCloseClick={() => { console.log('clicked on a close icon'); }}
       onChipClick={() => { console.log('clicked on a chip body'); }}
